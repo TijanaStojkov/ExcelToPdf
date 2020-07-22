@@ -1,0 +1,8 @@
+@media screen and (max-width: 900px){
+  nav .brand-logo{
+    font-size: 22px !important
+  } 
+}
+.sidenav-trigger {
+  display: none;
+}
