@@ -8,7 +8,8 @@ import 'materialize-css'; // It installs the JS asset only
 import 'materialize-css/dist/css/materialize.min.css';
 import { Icon, Collapsible } from 'react-materialize';
 import Nav from './components/Nav/Nav';
-import CollapsibleItemComponent from './components/CollapsibleItems/CollapsibleItem'
+import CollapsibleItemComponent from './components/CollapsibleItems/CollapsibleItem';
+import ExcelFile from './excelFiles/REAHEM.xlsx';
 
 class App extends Component {
     state={
@@ -160,6 +161,11 @@ class App extends Component {
           <div style={{minWidth: '500px'}}>
            <Nav/>
             <div >
+                  <div>
+                    <a href={ExcelFile} download>
+                     Preuzmi excel fajl
+                     </a>
+                  </div>
                <div className = "file-field input-field" >
                   <div className = "btn waves-effect waves-light red darken-4" >
                      <span>Izaberi fajl</span>
